@@ -1,0 +1,135 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/images/workDesk.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hero {
+  color: white;
+  height: 100vh;
+}
+.hero > .container {
+  position: relative;
+  top: 30%;
+}
+
+p.lead {
+  font-family: "Raleway", sans-serif;
+}
+
+.display-1 {
+  font-size: 7rem;
+  font-family: "Italiana", serif;
+}
+
+.modal-body {
+  background-color: #6b6460;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.connect-links {
+  color: #7cb28d;
+  display: inline-block;
+  position: relative;
+}
+
+.connect-links:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7cb28d;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.connect-links:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn {
+  background-color: #7cb28d;
+  border-color: #7cb28d;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #608668;
+  border-color: #608668;
+  color: white;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer {
+  padding-top: 240px;
+}
+
+.media-buttons {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.media-buttons > li {
+  opacity: 0.6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.media-buttons > li:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.5);
+}
+
+.navigation-list > li:hover {
+  color: lightgray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+  .navigation-list {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navigation-list > li {
+    padding: 20px;
+  }
+
+  .footer {
+    padding-top: 30px;
+  }
+
+  .media-buttons > li {
+    padding: 10px;
+  }
+}
